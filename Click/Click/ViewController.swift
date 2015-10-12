@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button.addTarget(self, action: "incrementCount", forControlEvents:
+            UIControlEvents.TouchUpInside)
+        
     }
     func incrementCount() {
         self.count++
