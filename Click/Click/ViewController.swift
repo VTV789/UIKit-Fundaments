@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var count = 0
+    var label:UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +22,7 @@ class ViewController: UIViewController {
         label.text = "0"
         
         self.view.addSubview(label)
+        self.label = label
         
         //Button 
         let button = UIButton()
@@ -25,6 +30,10 @@ class ViewController: UIViewController {
         button.setTitle("Click", forState: .Normal)
         button.setTitleColor(UIColor.blueColor(), forState: .Normal)
         self.view.addSubview(button)
+    }
+    func incrementCount() {
+        self.count++
+        self.label.text = "\(self.count)"
     }
 }
 
