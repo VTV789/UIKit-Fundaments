@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        var label = UILabel()
+        let label = UILabel()
         label.frame = CGRectMake(150, 150, 60, 60)
         label.text = "0"
         
